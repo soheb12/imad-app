@@ -4,44 +4,28 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+   
+var articles = {
+'article-One':{
+title: 'Article One',
+date: 'August 6, 2017',
+heading: 'Article One',
 
-var articles =
-{
-    var 'article-one' :
-    {
-    title : 'Article One | Soheb Moin',
-    heading :'Article One',
-    date : 'AUG 8, 2017',
-    content : `<P>
-                    This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One 
-                    This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One .
-                    This Is The Content Of Article One .
-                </P>
-                
-                <P>
-                    This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One 
-                    This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One .
-                    This Is The Content Of Article One .
-                </P>
-                
-                <P>
-                    This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One 
-                    This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One . This Is The Content Of Article One .
-                    This Is The Content Of Article One .
-                </P>`
-                },
+content:`<p>Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!n!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!</p>
+<p>Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!n!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!</p>
+<p>Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!n!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!</p>`}, 
 
-    var 'article-two' : 
+'article-two': 
     {
-    title : 'Article One | Soheb Moin',
+    title : 'Article Two | Soheb Moin',
     heading :'Article Two',
     date : 'AUG 9, 2017',
     content : `<P>
                     This Is The Content Of Article Two . 
                </P>`
     },
-    
-    var 'article-three' : 
+
+'article-three': 
     { 
     title : 'Article Three | Soheb Moin',
     heading :'Article Three',
