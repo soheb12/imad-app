@@ -2,7 +2,7 @@
 var button = document.getElementById('counter');
 
 
-button.onclick = function()
+button.onClick = function()
 {
     //create a request object
     var request = new XMLHttpRequest();
