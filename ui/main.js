@@ -2,15 +2,15 @@
 var button = document.getElementById('counter');
 
 
-button.onCLick = function()
+button.onclick = function()
 {
     //create a request object
     var request = new XMLHttpRequest();
     
     //capture the response and store it in a variable
-    request.OnreadystateChange = function(){
+    request.onreadystatechange = function(){
         
-        if(request.readystate == XMLHttpRequest.DONE)
+        if(request.readyState == XMLHttpRequest.DONE)
         {
             if(request.status == 200)
             {
