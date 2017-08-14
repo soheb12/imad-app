@@ -23,7 +23,7 @@ button.onclick = function()
     };
     
     //make a request
-    request.open('GET' , 'https://moinsoheb02.imad.hasura-app.io/counter' , true);
+    request.open('GET' , 'http://moinsoheb02.imad.hasura-app.io/counter' , true);
     request.send(null);
     
 };
