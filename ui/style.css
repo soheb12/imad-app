@@ -13,5 +13,16 @@ ul li{
 }
 #orange{
   background-color: orange;
-  
+}
+#green{
+  background-color: green;
+}
+#white{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: blue;
 }
