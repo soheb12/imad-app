@@ -12,36 +12,6 @@ var config = {
 };
 var app = express();
 app.use(morgan('combined'));
-   
-var articles = {
-'article-one':{
-title: 'Article One | Soheb Moin',
-date: 'August 6, 2017',
-heading: 'Article One',
-
-content:`<p>Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!n!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!</p>
-<p>Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!n!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!</p>
-<p>Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!n!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!Here goes my content! Check this page soon!</p>`}, 
-
-'article-two': 
-    {
-    title : 'Article Two | Soheb Moin',
-    heading :'Article Two',
-    date : 'AUG 9, 2017',
-    content : `<P>
-                    This Is The Content Of Article Two . 
-               </P>`
-    },
-
-'article-three': 
-    { 
-    title : 'Article Three | Soheb Moin',
-    heading :'Article Three',
-    date : 'AUG 10, 2017',
-    content :`<P>
-                    This Is The Content Of Article Three . 
-              </P>`}
-};
 
 function createTemplate(data){
     var title  = data.title;
