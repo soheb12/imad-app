@@ -78,7 +78,7 @@ app.post('/create-user' , function(req , res) {
        else{
            res.send("User Succesfully Created : "  + username);
     });
-})
+});
 
 var pool = new Pool(config);
 app.get('/test-db' , function (req , res) {
